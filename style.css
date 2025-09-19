@@ -1,0 +1,96 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth; 
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+#about { background: #f4f4f4; }
+#skills { background: #e2e2ff; }
+#projects { background: #d1ffd1; }
+#contact { background: #ffe2e2; }
+
+
+.project {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+button {
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+.about-img{
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    float: right;
+    margin-left: 70px;
+    margin-bottom: 60px;
+}
