@@ -17,5 +17,30 @@ window.addEventListener("scroll", () => {
   });
 });
 
+function toggleForm() {
+  const form = document.getElementById("portfolioForm");
+  form.style.display = (form.style.display === "none") ? "block" : "none";
+}
 
-console.log("ScrollMagic animations can be added here later");
+
+const nameInput = document.getElementById("userName");
+if (nameInput) {
+  nameInput.addEventListener("input", function() {
+    document.getElementById("previewName").textContent = this.value || "-";
+  });
+}
+
+function addPortfolioSkill() {
+  const skillInput = document.getElementById("userSkill");
+  const skill = skillInput.value.trim();
+
+  if (skill !== "") {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    document.getElementById("previewSkills").appendChild(li);
+    skillInput.value = "";
+  }
+}
+
+
+console.log("ScrollMagic animations can be added here later!");

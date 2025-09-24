@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+ 
   <nav>
     <h1>My Portfolio</h1>
     <ul>
@@ -21,18 +21,41 @@
 
   
   <section id="about">
-    <h2>About Me</h2>
+   <h2>About Me</h2>
+<div class="create-portfolio">
+  <button onclick="toggleForm()">Create Your Own Portfolio</button>
+
+  <div id="portfolioForm" style="display: none; margin-top: 15px;">
+    <h3>Build Your Portfolio</h3>
+    <input type="text" id="userName" placeholder="Enter your name"><br><br>
+    <input type="text" id="userSkill" placeholder="Enter a skill"><br><br>
+    <button onclick="addPortfolioSkill()">Add Skill</button>
+
+    <h4>Preview:</h4>
+    <p><strong>Name:</strong> <span id="previewName">-</span></p>
+    <ul id="previewSkills"></ul>
+  </div>
+</div>
     
         <img src="https://images.unsplash.com/photo-1595853035070-59a39fe84de3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VsY29tZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="about-img">
-    <p>Hello! I'm Haripriya a beginner web developer learning HTML, CSS, and JavaScript. 
-       This portfolio shows my journey and projects.</p>
-  
+    <p>Hello! I'm Haripriya a beginner front-end developer, currently learning the basics of web technologies 
+      including HTML, CSS, and JavaScript. 
+      I am passionate about problem-solving and design, 
+      and I want to use my skills to build clean, modern websites. 
+      My next steps are to dive into frameworks and backend technologies to expand my capabilities.
+    This portfolio shows my journey and projects.</p>
   </section>
 
   
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
+
+    
+    <input type="text" id="skillInput" placeholder="Type a skill">
+    <button onclick="addSkill()">Add Skill</button>
+
+    
+    <ul id="skillsList">
       <li>HTML5</li>
       <li>CSS3</li>
       <li>JavaScript</li>
@@ -40,6 +63,7 @@
     </ul>
   </section>
 
+  
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
@@ -50,7 +74,7 @@
       <h3>Project 2</h3>
       <p>Interactive To-Do list using JavaScript.</p>
     </div>
-      <div class="project">
+    <div class="project">
       <h3>Project 3</h3>
       <p>Currently working to make a fully functional website</p>
     </div>
@@ -68,7 +92,7 @@
   </section>
 
   <footer>
-    <p> 2025 My Portfolio | Built with HTML, CSS & JS</p>
+    <p> My Portfolio | Built with HTML, CSS & JS</p>
   </footer>
 
   <script src="script.js"></script>

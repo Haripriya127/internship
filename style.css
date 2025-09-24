@@ -45,6 +45,24 @@ section {
 #contact { background: #ffe2e2; }
 
 
+#skills input, 
+#skills button {
+  padding: 8px;
+  margin: 5px 0;
+}
+#skillsList {
+  margin-top: 15px;
+}
+#skillsList li {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
 .project {
   background: white;
   padding: 15px;
